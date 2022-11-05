@@ -54,7 +54,7 @@ export default class App extends Component {
     remainingDays.push({
       date: tomorrow.getDate(),
       month: tomorrow.getMonth() + 1,
-      day: numberToDays[tomorrow.getDay() - 1],
+      day: numberToDays[tomorrow.getDay()],
     });
     for (let i = 1; i <= days; i++) {
       tomorrow.setDate(tomorrow.getDate() + 1);
